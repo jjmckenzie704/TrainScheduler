@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <!-- <script src="assets/javascript.js"></script> -->
 </head>
 <body>
+        <div class="container">
+                <div class="jumbotron">
+                    <h1>49er Train Schedule</h1>
+                    <p>Your Train Is Here</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Current Train Schedule</h3>
+                    </div>
+                    <!-- Table -->
+                    <div class="wrapper">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <!--<div class="panel-body">
+                              Panel content
+                    </div>-->
+                </div>
+            </div>
+            <div class="container" id="Add-train">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Train</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group row">
+                            <div id="Name">
+                                <label for="Train name">Train Name</label>
+                                <input class="form-control" id="train-name" type="text">
+                            </div>
+                            <div id="Destination">
+                                <label for="destination">Destination</label>
+                                <input class="form-control" id="train-destination" type="number">
+                            </div>
+                            <div id="Frequency">
+                                <label for="frequency">First Train Time (24hrs)</label>
+                                <input class="form-control" id="train-frequency" type="number">
+                            </div>
+                            <div id="Next Arrival">
+                                <label for="arrival">Next Arrival</label>
+                                <input class="form-control" id="train-arrival" type="number">
+                            </div>
+                            <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start javascript-->
+            <script type="text/javascript">
+            
+            
+            </script>
     
 </body>
 </html>

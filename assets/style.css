@@ -4,3 +4,7 @@
     text-align: center;
 
 }
+.panel-default>.panel-heading {
+    background-color: royalblue;
+    color: white;
+}
